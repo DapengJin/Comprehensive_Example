@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+E:/C++Programs/Comprehensive_Example/Account.h
+Date.h
+E:/C++Programs/Comprehensive_Example/Date.h
+Accumulator.h
+E:/C++Programs/Comprehensive_Example/Accumulator.h
+string
+-
+
+E:/C++Programs/Comprehensive_Example/Accumulator.h
+Date.h
+E:/C++Programs/Comprehensive_Example/Date.h
+
+E:/C++Programs/Comprehensive_Example/CreditAccount.h
+Account.h
+E:/C++Programs/Comprehensive_Example/Account.h
+
+E:/C++Programs/Comprehensive_Example/Date.h
+
+E:/C++Programs/Comprehensive_Example/SavingsAccount.h
+Account.h
+E:/C++Programs/Comprehensive_Example/Account.h
+Accumulator.h
+E:/C++Programs/Comprehensive_Example/Accumulator.h
+
+E:/C++Programs/Comprehensive_Example/main.cpp
+iostream
+-
+SavingsAccount.h
+E:/C++Programs/Comprehensive_Example/SavingsAccount.h
+CreditAccount.h
+E:/C++Programs/Comprehensive_Example/CreditAccount.h
+

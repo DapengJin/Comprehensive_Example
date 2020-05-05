@@ -9,12 +9,15 @@ int totalDate(const Date &date1, const Date &date2){
 }
 int main() {
     Date date(2008, 11, 1); // 起始日期
-    SavingsAccount s1 = SavingsAccount("jin", date, 0.015);
-    SavingsAccount s2 = SavingsAccount("li", date, 0.015);
-    CreditAccount c1 = CreditAccount("li2", date, 50000, 0.15, 0);
-    Account * accounts[] = {&s1, &s2, &c1};
+    Array<Account *> accounts(0); // 创建账户数组，元素个数为0
 
-    const int n = sizeof(accounts) / sizeof(accounts[0]); // 账户总数
+//    SavingsAccount s1 = SavingsAccount("jin", date, 0.015);
+//    SavingsAccount s2 = SavingsAccount("li", date, 0.015);
+//    CreditAccount c1 = CreditAccount("li2", date, 50000, 0.15, 0);
+//    Account * accounts[] = {&s1, &s2, &c1};
+//
+//    const int n = sizeof(accounts) / sizeof(accounts[0]); // 账户总数，
+//                // 但是当数组作为函数参数的时候，sizeof(accounts) 返回指针的大小
 
     //cout << "(d) deposit, (w) withdraw, (s) show, (c) change day, (n) next month, (e) exit" << endl;
 

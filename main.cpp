@@ -1,6 +1,7 @@
 #include <iostream>
 #include "SavingsAccount.h"
 #include "CreditAccount.h"
+#include "Array.h"
 
 using namespace std;
 int totalDate(const Date &date1, const Date &date2){
@@ -27,6 +28,9 @@ int main() {
         string desc;
         cin >> cmd;
         switch (cmd) {
+            case 'a': // 增加新账户
+                cout << "add a new account: type:'s' or 'c'  id:string" << "\ncommand>_ " ;
+
             case 'd':
                 cout << "deposit: index:int  amount:double" << "\ncommand>_ " ;
                 cin >> index >> amount;

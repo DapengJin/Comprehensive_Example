@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 #include "SavingsAccount.h"
 #include "CreditAccount.h"
 #include "Array.h"
@@ -25,7 +26,7 @@ int main() {
     do {
         date.show();
         cout << "\tTotal: " << Account::getTotal() << endl;
-        cout << "(d) deposit, (w) withdraw, (s) show, (c) change day, (n) next month, (e) exit" << "\ncommand>_ ";
+        cout << "(a) add an account, (d) deposit, (w) withdraw, (s) show, (c) change day, (n) next month, (e) exit" << "\ncommand>_ ";
         char type; // 'c': credit account, 's' savings account
         int index, day;
         double amount, credit, rate, fee;
@@ -37,38 +38,39 @@ int main() {
                 cout << "add a new account: type:'s' or 'c'  id:string" << "\ncommand>_ " ;
                 cin >> type >> id;
                 if (type == 's'){
-                    cout << "\trate: double" << "\ncommand>_ " ;
+                    cout << "\trate: double \n\tcommand>_ " ;
                     cin >> rate;
                     account = new SavingsAccount(id, date, rate);
                 } else{
-                    cout << "\tcredit, rate, fee: double" << "\ncommand>_ " ;
+                    cout << "\tcredit, rate, fee: double \n\tcommand>_ " ;
+                    cin >> credit >> rate >> fee;
                     account = new CreditAccount(id, date, credit, rate, fee);
                 }
                 accounts.resize(accounts.getSize() + 1);
                 accounts[accounts.getSize() - 1] = account;
                 break;
             case 'd':
-                cout << "deposit: index:int  amount:double" << "\ncommand>_ " ;
+                cout << "deposit: index:int  amount:double \ncommand>_ " ;
                 cin >> index >> amount;
                 getline(cin, desc);
                 accounts[index]->deposit(date, amount, desc);
                 break;
             case 'w':
-                cout << "withdraw: index:int  amount:double" << "\ncommand>_ ";
+                cout << "withdraw: index:int  amount:double \ncommand>_ ";
                 cin >> index >> amount;
                 getline(cin, desc);
                 accounts[index]->withdraw(date, amount, desc);
                 break;
             case 's':
                 cout << "Show: " << endl;
-                for (int i = 0; i < n; i++) {
+                for (int i = 0; i < accounts.getSize(); i++) {
                     cout << "[" << i << "]";
                     accounts[i]->show();
                     cout << endl;
                 }
                 break;
             case 'c':
-                cout << "change day: day:int" << "\ncommand>_ ";
+                cout << "change day: day:int \ncommand>_ ";
                 cin >> day;
                 if (day < date.getDay())
                     cout << "you cannot specify a previous day";
@@ -83,7 +85,7 @@ int main() {
                     date = Date(date.getYear()+1, 1, 1);
                 else
                     date = Date(date.getYear(), date.getMonth()+1, 1);
-                for (int i = 0; i < n; i++)
+                for (int i = 0; i < accounts.getSize(); i++)
                     accounts[i]->settle(date);
                 break;
         }

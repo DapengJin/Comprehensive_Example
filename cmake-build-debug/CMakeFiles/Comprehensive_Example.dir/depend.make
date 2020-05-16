@@ -27,6 +27,7 @@ CMakeFiles/Comprehensive_Example.dir/SavingsAccount.cpp.obj: ../SavingsAccount.h
 
 CMakeFiles/Comprehensive_Example.dir/main.cpp.obj: ../Account.h
 CMakeFiles/Comprehensive_Example.dir/main.cpp.obj: ../Accumulator.h
+CMakeFiles/Comprehensive_Example.dir/main.cpp.obj: ../Array.h
 CMakeFiles/Comprehensive_Example.dir/main.cpp.obj: ../CreditAccount.h
 CMakeFiles/Comprehensive_Example.dir/main.cpp.obj: ../Date.h
 CMakeFiles/Comprehensive_Example.dir/main.cpp.obj: ../SavingsAccount.h

@@ -26,14 +26,27 @@ int main() {
         date.show();
         cout << "\tTotal: " << Account::getTotal() << endl;
         cout << "(d) deposit, (w) withdraw, (s) show, (c) change day, (n) next month, (e) exit" << "\ncommand>_ ";
+        char type; // 'c': credit account, 's' savings account
         int index, day;
-        double amount;
-        string desc;
+        double amount, credit, rate, fee;
+        string id, desc;
+        Account * account;
         cin >> cmd;
         switch (cmd) {
             case 'a': // 增加新账户
                 cout << "add a new account: type:'s' or 'c'  id:string" << "\ncommand>_ " ;
-
+                cin >> type >> id;
+                if (type == 's'){
+                    cout << "\trate: double" << "\ncommand>_ " ;
+                    cin >> rate;
+                    account = new SavingsAccount(id, date, rate);
+                } else{
+                    cout << "\tcredit, rate, fee: double" << "\ncommand>_ " ;
+                    account = new CreditAccount(id, date, credit, rate, fee);
+                }
+                accounts.resize(accounts.getSize() + 1);
+                accounts[accounts.getSize() - 1] = account;
+                break;
             case 'd':
                 cout << "deposit: index:int  amount:double" << "\ncommand>_ " ;
                 cin >> index >> amount;

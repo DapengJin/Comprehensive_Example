@@ -86,6 +86,12 @@
 		<Unit filename="E:/C++Programs/Comprehensive_Example/Account.h">
 			<Option target="Comprehensive_Example"/>
 		</Unit>
+		<Unit filename="E:/C++Programs/Comprehensive_Example/AccountRecord.cpp">
+			<Option target="Comprehensive_Example"/>
+		</Unit>
+		<Unit filename="E:/C++Programs/Comprehensive_Example/AccountRecord.h">
+			<Option target="Comprehensive_Example"/>
+		</Unit>
 		<Unit filename="E:/C++Programs/Comprehensive_Example/Accumulator.cpp">
 			<Option target="Comprehensive_Example"/>
 		</Unit>

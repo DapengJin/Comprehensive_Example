@@ -149,6 +149,33 @@ Account.cpp.s:
 	$(MAKE) -f CMakeFiles\Comprehensive_Example.dir\build.make CMakeFiles/Comprehensive_Example.dir/Account.cpp.s
 .PHONY : Account.cpp.s
 
+AccountRecord.obj: AccountRecord.cpp.obj
+
+.PHONY : AccountRecord.obj
+
+# target to build an object file
+AccountRecord.cpp.obj:
+	$(MAKE) -f CMakeFiles\Comprehensive_Example.dir\build.make CMakeFiles/Comprehensive_Example.dir/AccountRecord.cpp.obj
+.PHONY : AccountRecord.cpp.obj
+
+AccountRecord.i: AccountRecord.cpp.i
+
+.PHONY : AccountRecord.i
+
+# target to preprocess a source file
+AccountRecord.cpp.i:
+	$(MAKE) -f CMakeFiles\Comprehensive_Example.dir\build.make CMakeFiles/Comprehensive_Example.dir/AccountRecord.cpp.i
+.PHONY : AccountRecord.cpp.i
+
+AccountRecord.s: AccountRecord.cpp.s
+
+.PHONY : AccountRecord.s
+
+# target to generate assembly for a file
+AccountRecord.cpp.s:
+	$(MAKE) -f CMakeFiles\Comprehensive_Example.dir\build.make CMakeFiles/Comprehensive_Example.dir/AccountRecord.cpp.s
+.PHONY : AccountRecord.cpp.s
+
 Accumulator.obj: Accumulator.cpp.obj
 
 .PHONY : Accumulator.obj
@@ -296,6 +323,9 @@ help:
 	@echo ... Account.obj
 	@echo ... Account.i
 	@echo ... Account.s
+	@echo ... AccountRecord.obj
+	@echo ... AccountRecord.i
+	@echo ... AccountRecord.s
 	@echo ... Accumulator.obj
 	@echo ... Accumulator.i
 	@echo ... Accumulator.s

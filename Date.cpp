@@ -33,3 +33,16 @@ int Date::getMaxDay() const {
 void Date::show() const {
     cout << getYear() << "-" << getMonth() << "-" << getDay();
 }
+
+Date Date::read() {
+    int year, month, day;
+    char c1, c2;
+    cin >> year >> c1 >> month >> c2 >> day;
+    return Date(year, month, day);
+}
+
+bool Date::operator<(const Date &date) const {
+    return totalDays < date.totalDays;
+}
+
+

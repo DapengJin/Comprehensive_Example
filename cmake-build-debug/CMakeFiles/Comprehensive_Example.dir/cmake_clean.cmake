@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Comprehensive_Example.dir/Account.cpp.obj"
+  "CMakeFiles/Comprehensive_Example.dir/AccountRecord.cpp.obj"
   "CMakeFiles/Comprehensive_Example.dir/Accumulator.cpp.obj"
   "CMakeFiles/Comprehensive_Example.dir/CreditAccount.cpp.obj"
   "CMakeFiles/Comprehensive_Example.dir/Date.cpp.obj"

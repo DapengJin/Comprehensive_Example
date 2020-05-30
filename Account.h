@@ -8,14 +8,19 @@
 #include "Date.h"
 #include "Accumulator.h"
 #include <string>
+#include <map>
+#include "AccountRecord.h"
 
 using namespace std;
-
+class AccountRecord;
+// 定义用来存储账目的多重映射类型
+typedef multimap<Date, AccountRecord> RecordMap;
 class Account { // 储蓄账户类
 private:
     string id; // 账号
     double balance; // 余额
     static double total; // 所以账户的总金额
+    static RecordMap recordMap;
 //    double rate; // 年利率
 //    Date lastDate;  // 上次变更余额的时间
 //    double accumulation; // 余额按日累加之和
@@ -36,6 +41,8 @@ protected:
     void error(const string &msg) const;
 
 public:
+    static void query(const Date &begin, const Date &end);
+
     const string &getId() const { return id; }
 
     double getBalance() const { return balance; }

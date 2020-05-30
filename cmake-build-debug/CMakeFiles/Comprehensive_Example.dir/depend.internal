@@ -4,6 +4,13 @@
 CMakeFiles/Comprehensive_Example.dir/Account.cpp.obj
  E:/C++Programs/Comprehensive_Example/Account.cpp
  E:/C++Programs/Comprehensive_Example/Account.h
+ E:/C++Programs/Comprehensive_Example/AccountRecord.h
+ E:/C++Programs/Comprehensive_Example/Accumulator.h
+ E:/C++Programs/Comprehensive_Example/Date.h
+CMakeFiles/Comprehensive_Example.dir/AccountRecord.cpp.obj
+ E:/C++Programs/Comprehensive_Example/Account.h
+ E:/C++Programs/Comprehensive_Example/AccountRecord.cpp
+ E:/C++Programs/Comprehensive_Example/AccountRecord.h
  E:/C++Programs/Comprehensive_Example/Accumulator.h
  E:/C++Programs/Comprehensive_Example/Date.h
 CMakeFiles/Comprehensive_Example.dir/Accumulator.cpp.obj
@@ -12,6 +19,7 @@ CMakeFiles/Comprehensive_Example.dir/Accumulator.cpp.obj
  E:/C++Programs/Comprehensive_Example/Date.h
 CMakeFiles/Comprehensive_Example.dir/CreditAccount.cpp.obj
  E:/C++Programs/Comprehensive_Example/Account.h
+ E:/C++Programs/Comprehensive_Example/AccountRecord.h
  E:/C++Programs/Comprehensive_Example/Accumulator.h
  E:/C++Programs/Comprehensive_Example/CreditAccount.cpp
  E:/C++Programs/Comprehensive_Example/CreditAccount.h
@@ -21,14 +29,15 @@ CMakeFiles/Comprehensive_Example.dir/Date.cpp.obj
  E:/C++Programs/Comprehensive_Example/Date.h
 CMakeFiles/Comprehensive_Example.dir/SavingsAccount.cpp.obj
  E:/C++Programs/Comprehensive_Example/Account.h
+ E:/C++Programs/Comprehensive_Example/AccountRecord.h
  E:/C++Programs/Comprehensive_Example/Accumulator.h
  E:/C++Programs/Comprehensive_Example/Date.h
  E:/C++Programs/Comprehensive_Example/SavingsAccount.cpp
  E:/C++Programs/Comprehensive_Example/SavingsAccount.h
 CMakeFiles/Comprehensive_Example.dir/main.cpp.obj
  E:/C++Programs/Comprehensive_Example/Account.h
+ E:/C++Programs/Comprehensive_Example/AccountRecord.h
  E:/C++Programs/Comprehensive_Example/Accumulator.h
- E:/C++Programs/Comprehensive_Example/Array.h
  E:/C++Programs/Comprehensive_Example/CreditAccount.h
  E:/C++Programs/Comprehensive_Example/Date.h
  E:/C++Programs/Comprehensive_Example/SavingsAccount.h

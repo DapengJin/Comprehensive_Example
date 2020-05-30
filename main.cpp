@@ -33,8 +33,10 @@ int main() {
 
     char cmd;
     do {
+        cout << "\n" << endl;
         date.show();
-        cout << "\tTotal: " << Account::getTotal() << endl;
+        cout << "--------------------------------------------------------------------------------------" ;
+        cout << "Total: " << Account::getTotal() << endl;
         cout << "(a) add an account, (d) deposit, (w) withdraw, (s) show, (c) change day, (n) next month, (q) query, (e) exit" << "\ncommand>_ ";
         char type; // 'c': credit account, 's' savings account
         int index, day;

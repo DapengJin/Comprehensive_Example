@@ -4,6 +4,6 @@ I'm learning C++ using this websit https://next.xuetangx.com/course/THU080910002
 
 It is a bank management system that you can learn Inheritance and polymorphism.
 
-Actually, the most interesting thing for this project is that you can create your own account and constantly deposite money to it.
+Actually, the most interesting thing for this project is that you can create your own account and constantly deposit money to it.
 
 

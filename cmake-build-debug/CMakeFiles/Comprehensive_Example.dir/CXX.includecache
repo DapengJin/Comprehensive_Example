@@ -6,6 +6,16 @@
 
 #IncludeRegexTransform: 
 
+E:/C++Programs/Comprehensive_Example/Account.cpp
+Account.h
+E:/C++Programs/Comprehensive_Example/Account.h
+cmath
+-
+iostream
+-
+utility
+-
+
 E:/C++Programs/Comprehensive_Example/Account.h
 Date.h
 E:/C++Programs/Comprehensive_Example/Date.h
@@ -17,6 +27,16 @@ map
 -
 AccountRecord.h
 E:/C++Programs/Comprehensive_Example/AccountRecord.h
+istream
+-
+AccountException.h
+E:/C++Programs/Comprehensive_Example/AccountException.h
+
+E:/C++Programs/Comprehensive_Example/AccountException.h
+stdexcept
+-
+Account.h
+E:/C++Programs/Comprehensive_Example/Account.h
 
 E:/C++Programs/Comprehensive_Example/AccountRecord.h
 Date.h
@@ -30,31 +50,7 @@ E:/C++Programs/Comprehensive_Example/Accumulator.h
 Date.h
 E:/C++Programs/Comprehensive_Example/Date.h
 
-E:/C++Programs/Comprehensive_Example/CreditAccount.h
-Account.h
-E:/C++Programs/Comprehensive_Example/Account.h
-
 E:/C++Programs/Comprehensive_Example/Date.h
-
-E:/C++Programs/Comprehensive_Example/SavingsAccount.h
-Account.h
-E:/C++Programs/Comprehensive_Example/Account.h
-Accumulator.h
-E:/C++Programs/Comprehensive_Example/Accumulator.h
-
-E:/C++Programs/Comprehensive_Example/main.cpp
 iostream
--
-string
--
-SavingsAccount.h
-E:/C++Programs/Comprehensive_Example/SavingsAccount.h
-CreditAccount.h
-E:/C++Programs/Comprehensive_Example/CreditAccount.h
-AccountRecord.h
-E:/C++Programs/Comprehensive_Example/AccountRecord.h
-algorithm
--
-vector
 -
 

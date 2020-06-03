@@ -29,7 +29,7 @@ public:
     void settle(const Date &date) override;
 
     // 显示账户信息
-    virtual void show() const override;
+    virtual void show(ostream &out) const override;
 };
 
 

@@ -33,6 +33,6 @@ void SavingsAccount::settle(const Date &date) {
     }
 }
 
-void SavingsAccount::show() const {
+void SavingsAccount::show(ostream &out) const {
     cout << getId() << "\tBalance: " << getBalance();
 }

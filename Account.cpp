@@ -29,11 +29,11 @@ void Account::record(const Date &date, double amount, const string &desc) {
 }
 
 void Account::error(const string &msg) const {
-    cout << "ERROR(#" << id << "): " << msg << endl;
+    throw AccountException(this, msg);
 }
 
-void Account::show() const {
-    cout << id << "\tBalance: " << balance;
+void Account::show(ostream &out) const {
+    out << id << "\tBalance: " << balance;
 }
 
 void Account::query(const Date &begin, const Date &end){
@@ -43,6 +43,8 @@ void Account::query(const Date &begin, const Date &end){
         for (auto iter = iter1; iter != iter2; ++iter){
             iter->second.show();
         }
+    }else {
+        throw runtime_error("Start date should be early than end date");
     }
 }
 

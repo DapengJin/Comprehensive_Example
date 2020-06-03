@@ -86,6 +86,9 @@
 		<Unit filename="E:/C++Programs/Comprehensive_Example/Account.h">
 			<Option target="Comprehensive_Example"/>
 		</Unit>
+		<Unit filename="E:/C++Programs/Comprehensive_Example/AccountException.h">
+			<Option target="Comprehensive_Example"/>
+		</Unit>
 		<Unit filename="E:/C++Programs/Comprehensive_Example/AccountRecord.cpp">
 			<Option target="Comprehensive_Example"/>
 		</Unit>
@@ -96,6 +99,12 @@
 			<Option target="Comprehensive_Example"/>
 		</Unit>
 		<Unit filename="E:/C++Programs/Comprehensive_Example/Accumulator.h">
+			<Option target="Comprehensive_Example"/>
+		</Unit>
+		<Unit filename="E:/C++Programs/Comprehensive_Example/Controller.cpp">
+			<Option target="Comprehensive_Example"/>
+		</Unit>
+		<Unit filename="E:/C++Programs/Comprehensive_Example/Controller.h">
 			<Option target="Comprehensive_Example"/>
 		</Unit>
 		<Unit filename="E:/C++Programs/Comprehensive_Example/CreditAccount.cpp">
@@ -114,6 +123,9 @@
 			<Option target="Comprehensive_Example"/>
 		</Unit>
 		<Unit filename="E:/C++Programs/Comprehensive_Example/SavingsAccount.h">
+			<Option target="Comprehensive_Example"/>
+		</Unit>
+		<Unit filename="E:/C++Programs/Comprehensive_Example/deleter.h">
 			<Option target="Comprehensive_Example"/>
 		</Unit>
 		<Unit filename="E:/C++Programs/Comprehensive_Example/main.cpp">

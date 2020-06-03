@@ -5,13 +5,15 @@
 #ifndef COMPREHENSIVE_EXAMPLE_DATE_H
 #define COMPREHENSIVE_EXAMPLE_DATE_H
 
+#include <iostream>
+using namespace std;
 
 class Date {
 private:
     int year{}, month{}, day{};
     int totalDays{}; // 从公元元年1月1号开始
 public:
-    static Date read(); // 因为要查找某一范围内的 银行记录，我们需要有 read 函数，读取日期
+    // static Date read(); // 因为要查找某一范围内的 银行记录，我们需要有 read 函数，读取日期
 
     explicit Date(int year=1, int month=1, int day=1);
 
@@ -27,6 +29,9 @@ public:
     //int distance(const Date &date) const {return totalDays - date.totalDays;} // 计算两个日期之间有多少天
     bool operator < (const Date &date) const;
 };
+istream & operator >> (istream &in, Date &date);
+
+ostream & operator << (ostream &out, const Date &date);
 
 
 #endif //COMPREHENSIVE_EXAMPLE_DATE_H

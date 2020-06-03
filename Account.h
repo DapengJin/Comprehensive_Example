@@ -10,11 +10,16 @@
 #include <string>
 #include <map>
 #include "AccountRecord.h"
+#include <istream>
+#include "AccountException.h"
+
 
 using namespace std;
+
 class AccountRecord;
 // 定义用来存储账目的多重映射类型
 typedef multimap<Date, AccountRecord> RecordMap;
+
 class Account { // 储蓄账户类
 private:
     string id; // 账号
@@ -59,8 +64,12 @@ public:
     virtual void settle(const Date &date) = 0;
 
     // 显示账户信息
-    virtual void show() const;
+    virtual void show(ostream &out) const;
 };
 
+inline ostream & operator << (ostream &out, const Account &account){
+    account.show(out);
+    return out;
+}
 
 #endif //COMPREHENSIVE_EXAMPLE_ACCOUNT_H

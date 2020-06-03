@@ -203,6 +203,33 @@ Accumulator.cpp.s:
 	$(MAKE) -f CMakeFiles\Comprehensive_Example.dir\build.make CMakeFiles/Comprehensive_Example.dir/Accumulator.cpp.s
 .PHONY : Accumulator.cpp.s
 
+Controller.obj: Controller.cpp.obj
+
+.PHONY : Controller.obj
+
+# target to build an object file
+Controller.cpp.obj:
+	$(MAKE) -f CMakeFiles\Comprehensive_Example.dir\build.make CMakeFiles/Comprehensive_Example.dir/Controller.cpp.obj
+.PHONY : Controller.cpp.obj
+
+Controller.i: Controller.cpp.i
+
+.PHONY : Controller.i
+
+# target to preprocess a source file
+Controller.cpp.i:
+	$(MAKE) -f CMakeFiles\Comprehensive_Example.dir\build.make CMakeFiles/Comprehensive_Example.dir/Controller.cpp.i
+.PHONY : Controller.cpp.i
+
+Controller.s: Controller.cpp.s
+
+.PHONY : Controller.s
+
+# target to generate assembly for a file
+Controller.cpp.s:
+	$(MAKE) -f CMakeFiles\Comprehensive_Example.dir\build.make CMakeFiles/Comprehensive_Example.dir/Controller.cpp.s
+.PHONY : Controller.cpp.s
+
 CreditAccount.obj: CreditAccount.cpp.obj
 
 .PHONY : CreditAccount.obj
@@ -329,6 +356,9 @@ help:
 	@echo ... Accumulator.obj
 	@echo ... Accumulator.i
 	@echo ... Accumulator.s
+	@echo ... Controller.obj
+	@echo ... Controller.i
+	@echo ... Controller.s
 	@echo ... CreditAccount.obj
 	@echo ... CreditAccount.i
 	@echo ... CreditAccount.s

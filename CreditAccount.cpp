@@ -47,7 +47,7 @@ void CreditAccount::settle(const Date &date) {
 
 }
 
-void CreditAccount::show() const {
-    Account::show();
-    cout << "\tAvailable credit: " << getAvailableCredit();
+void CreditAccount::show(ostream &out) const {
+    Account::show(out);
+    out << "\tAvailable credit: " << getAvailableCredit();
 }

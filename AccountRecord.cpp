@@ -11,8 +11,7 @@ AccountRecord::AccountRecord(const Date &date, const Account *account, double am
 }
 
 void AccountRecord::show() const {
-    date.show();
-    cout << "\t#" << account->getId() << "\t" << amount << "\t" << balance << "\t" << desc << endl;
+    cout << date << "\t#" << account->getId() << "\t" << amount << "\t" << balance << "\t" << desc << endl;
 
 }
 

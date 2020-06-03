@@ -1,0 +1,12 @@
+a s dapeng 0.15
+c 20
+a c xuenan 5000 0.15 15
+d 1 5000 buy a computer
+w 1 10000 buy a computer 
+d 0 5000 salay
+n 
+d 1 5100 repay
+a c boyang 6000 0.5 50
+n 
+c 20
+c 21

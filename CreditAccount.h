@@ -40,7 +40,7 @@ public:
     // 结算利息（每月）
     void settle(const Date &date) override;
 
-    void show() const override;
+    void show(ostream &out) const override;
 };
 
 #endif //COMPREHENSIVE_EXAMPLE_CREDITACCOUNT_H
